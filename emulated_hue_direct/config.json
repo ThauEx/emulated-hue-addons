@@ -1,6 +1,6 @@
 {
   "name": "Emulated HUE (Direct ESPHome)",
-  "version": "master-8e8a65eddbfec0bfa00012d6fba4041bfd17eab0",
+  "version": "master-a08ff40d2228bac0124729568dc18d50f9ed1de7",
   "description": "Hue Emulation for Home Assistant, with a direct ESPHome entertainment path",
   "url": "https://github.com/ThauEx/emulated-hue-core",
   "slug": "emulated_hue_direct",
