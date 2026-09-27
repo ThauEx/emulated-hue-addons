@@ -35,8 +35,9 @@ Native API port of that ESPHome device. Defaults to 6053 (ESPHome's default).
 
 ### Option: `esphome_password`
 
-Native API password of that ESPHome device (the `password:` under `api:` in
-its YAML), if it has one.
+The device's Noise encryption key (the `key:` under `api: encryption:` in
+its YAML) - ESPHome removed plaintext API passwords in 2026.1.0, so this
+must be the base64 encryption key, not a plaintext password.
 
 ## Direct ESPHome path
 
@@ -48,7 +49,7 @@ more than one, stop the add-on, edit `emulated_hue.json` in
 ```json
 "esphome_host": "192.168.178.151",
 "esphome_port": 6053,
-"esphome_password": "220190"
+"esphome_password": "I286nN1GmSpBsmSjtDaarvm242DOVyKI+uskwtpF6sE="
 ```
 
 A light's own `esphome_host` always overrides the add-on-wide default.
