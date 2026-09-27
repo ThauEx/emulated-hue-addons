@@ -14,13 +14,17 @@
   "homeassistant_api": true,
   "init": false,
   "options": {
-    "verbose": false
+    "verbose": false,
+    "esphome_port": 6053
   },
   "schema": {
     "http_port": "int?",
     "https_port": "int?",
     "use_default_ports_for_discovery": "bool?",
-    "verbose": "bool"
+    "verbose": "bool",
+    "esphome_host": "str?",
+    "esphome_port": "int?",
+    "esphome_password": "password?"
   },
   "image": "ghcr.io/thauex/emulated-hue-core"
 }
