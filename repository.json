@@ -1,5 +1,5 @@
 {
-  "name": "HASS Emulated Hue Add-Ons",
-  "url": "https://github.com/hass-emulated-hue/hassio-repo",
-  "maintainer": "https://github.com/hass-emulated-hue"
+  "name": "ThauEx Emulated Hue Add-Ons",
+  "url": "https://github.com/ThauEx/emulated-hue-addons",
+  "maintainer": "https://github.com/ThauEx"
 }

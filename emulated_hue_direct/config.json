@@ -1,13 +1,13 @@
 {
-  "name": "Emulated HUE",
+  "name": "Emulated HUE (Direct ESPHome)",
   "version": "0.3.0",
-  "description": "Hue Emulation for Home Assistant",
-  "url": "https://github.com/hass-emulated-hue/core",
-  "slug": "emulated_hue",
+  "description": "Hue Emulation for Home Assistant, with a direct ESPHome entertainment path",
+  "url": "https://github.com/ThauEx/emulated-hue-core",
+  "slug": "emulated_hue_direct",
   "stage": "stable",
   "startup": "application",
   "boot": "auto",
-  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "arch": ["amd64"],
   "map": ["config:rw"],
   "host_network": true,
   "environment": {},
@@ -22,5 +22,5 @@
     "use_default_ports_for_discovery": "bool?",
     "verbose": "bool"
   },
-  "image": "ghcr.io/hass-emulated-hue/core"
+  "image": "ghcr.io/thauex/emulated-hue-core"
 }
