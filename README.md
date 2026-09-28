@@ -1,4 +1,4 @@
-# Emulated Hue Add-Ons (ThauEx fork)
+# Emulated Hue Add-Ons
 
 Home Assistant add-on repository for [ThauEx/emulated-hue-core](https://github.com/ThauEx/emulated-hue-core), a fork of the (inactive) [hass-emulated-hue/core](https://github.com/hass-emulated-hue/core) that adds a direct ESPHome native-API path and CLIP v2 Entertainment support - see that repo's README for details on what's different and why.
 
