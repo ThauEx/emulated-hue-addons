@@ -1,6 +1,6 @@
 {
   "name": "Emulated HUE (Direct ESPHome)",
-  "version": "master-331a8f8fb338c1ae00ced7de79f89201c1151511",
+  "version": "master-43ad7ebcb79cd62bb48a32fae107929dcdcb191a",
   "description": "Hue Emulation for Home Assistant, with a direct ESPHome entertainment path",
   "url": "https://github.com/ThauEx/emulated-hue-core",
   "slug": "emulated_hue_direct",
@@ -13,9 +13,14 @@
   "environment": {},
   "homeassistant_api": true,
   "init": false,
+  "ingress": true,
+  "ingress_port": 8880,
+  "panel_icon": "mdi:lightbulb-group",
+  "panel_title": "Emulated Hue",
   "options": {
     "verbose": false,
-    "esphome_port": 6053
+    "esphome_port": 6053,
+    "wiz_port": 38899
   },
   "schema": {
     "http_port": "int?",
@@ -24,7 +29,9 @@
     "verbose": "bool",
     "esphome_host": "str?",
     "esphome_port": "int?",
-    "esphome_password": "password?"
+    "esphome_password": "password?",
+    "wiz_host": "str?",
+    "wiz_port": "int?"
   },
   "image": "ghcr.io/thauex/emulated-hue-core"
 }
