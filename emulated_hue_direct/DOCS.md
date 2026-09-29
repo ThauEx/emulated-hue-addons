@@ -1,9 +1,9 @@
 # Emulated Hue (Direct ESPHome)
 
-Fork of [Emulated Hue](https://github.com/hass-emulated-hue/core) with a
-direct ESPHome native-API path for Entertainment (Ambilight-style) streaming.
-Lights without `esphome_host` set in their light config behave exactly like
-upstream, going through Home Assistant as usual.
+Fork of [Emulated Hue](https://github.com/hass-emulated-hue/core) with direct
+native-control paths (ESPHome, WiZ) for Entertainment (Ambilight-style)
+streaming. Lights without a direct-path target configured behave exactly
+like upstream, going through Home Assistant as usual.
 
 ## Configuration Options
 
@@ -24,32 +24,11 @@ Useful for reverse proxies.
 
 Enter true or false to toggle verbose logging.
 
-### Option: `esphome_host`
+## Direct-path light configuration
 
-IP or hostname of an ESPHome device to use as the default for the direct
-entertainment path (see below). Leave empty to disable it.
-
-### Option: `esphome_port`
-
-Native API port of that ESPHome device. Defaults to 6053 (ESPHome's default).
-
-### Option: `esphome_password`
-
-The device's Noise encryption key (the `key:` under `api: encryption:` in
-its YAML) - ESPHome removed plaintext API passwords in 2026.1.0, so this
-must be the base64 encryption key, not a plaintext password.
-
-## Direct ESPHome path
-
-The `esphome_*` options above apply to any light that doesn't set its own
-`esphome_host`, which covers the common case of a single ESPHome light. For
-more than one, stop the add-on, edit `emulated_hue.json` in
-`/config/hass-emulated-hue/`, and add to each light's entry under `"lights"`:
-
-```json
-"esphome_host": "192.168.178.151",
-"esphome_port": 6053,
-"esphome_password": "I286nN1GmSpBsmSjtDaarvm242DOVyKI+uskwtpF6sE="
-```
-
-A light's own `esphome_host` always overrides the add-on-wide default.
+Everything else - assigning a light to ESPHome or WiZ, its host/port/credential,
+and triggering pairing mode - is done from the add-on's own panel, not here.
+Enable "Show in sidebar" on this add-on's Info page, then open it from the
+Home Assistant sidebar. Changes there take effect immediately, no restart
+needed. See the main [README](https://github.com/ThauEx/emulated-hue-core#direct-path-light-configuration)
+for details.
