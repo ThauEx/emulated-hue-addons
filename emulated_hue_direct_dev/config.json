@@ -19,6 +19,7 @@
   "init": false,
   "ingress": true,
   "ingress_port": 8880,
+  "watchdog": "http://[HOST]:[PORT:8880]/",
   "panel_icon": "mdi:lightbulb-group",
   "panel_title": "Emulated Hue DEV",
   "options": {

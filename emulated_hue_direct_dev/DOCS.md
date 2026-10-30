@@ -11,6 +11,11 @@ native-control paths (ESPHome, WiZ) for Entertainment (Ambilight-style)
 streaming. Lights without a direct-path target configured behave exactly
 like upstream, going through Home Assistant as usual.
 
+## Watchdog
+
+The add-on reports its health through the panel's web server, so Home Assistant can
+restart it if it stops answering. Turn on **Watchdog** on the add-on's Info page.
+
 ## Configuration Options
 
 ### Option: `http_port`
