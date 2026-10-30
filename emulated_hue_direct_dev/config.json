@@ -1,6 +1,6 @@
 {
   "name": "Emulated HUE (Direct ESPHome) DEV",
-  "version": "base-image-0f5d2a9525b7c004c5d640b610d3adc63c26af5f",
+  "version": "base-image-1f67f975fe4e856e53e847e2adc84c9c539be49a",
   "description": "Development build on the hassio-addons base image - do not run next to the regular add-on",
   "url": "https://github.com/ThauEx/emulated-hue-core",
   "slug": "emulated_hue_direct_dev",
