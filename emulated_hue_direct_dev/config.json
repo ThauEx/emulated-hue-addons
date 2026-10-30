@@ -1,0 +1,34 @@
+{
+  "name": "Emulated HUE (Direct ESPHome) DEV",
+  "version": "base-image-0f5d2a9525b7c004c5d640b610d3adc63c26af5f",
+  "description": "Development build on the hassio-addons base image - do not run next to the regular add-on",
+  "url": "https://github.com/ThauEx/emulated-hue-core",
+  "slug": "emulated_hue_direct_dev",
+  "stage": "experimental",
+  "startup": "application",
+  "boot": "auto",
+  "arch": [
+    "amd64"
+  ],
+  "map": [
+    "config:rw"
+  ],
+  "host_network": true,
+  "environment": {},
+  "homeassistant_api": true,
+  "init": false,
+  "ingress": true,
+  "ingress_port": 8880,
+  "panel_icon": "mdi:lightbulb-group",
+  "panel_title": "Emulated Hue DEV",
+  "options": {
+    "verbose": false
+  },
+  "schema": {
+    "http_port": "int?",
+    "https_port": "int?",
+    "use_default_ports_for_discovery": "bool?",
+    "verbose": "bool"
+  },
+  "image": "ghcr.io/thauex/emulated-hue-core"
+}
