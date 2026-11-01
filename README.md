@@ -18,4 +18,4 @@ The add-on's `version` field is pinned to a specific `emulated-hue-core` image t
 
 ## Dev add-on
 
-**Emulated HUE (Direct ESPHome) DEV** installs a build of a work-in-progress branch of `emulated-hue-core` (currently `base-image`: the hassio-addons base image and Python 3.14), so changes can be tried in Home Assistant before they reach the regular add-on. It shares ports and data with the regular add-on, so only run one of the two at a time. Its `version` points at `<branch>-<short commit SHA>` and is bumped the same way.
+**Emulated HUE (Direct ESPHome) DEV** installs a build of a work-in-progress branch of `emulated-hue-core` (currently `hass-client-upstream`: the original `hass-client` instead of the dead fork), so changes can be tried in Home Assistant before they reach the regular add-on. It shares ports and data with the regular add-on, so only run one of the two at a time. Its `version` points at `<branch>-<short commit SHA>` and is bumped the same way.

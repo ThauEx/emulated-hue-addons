@@ -1,4 +1,4 @@
-> **DEV build** of the `base-image` branch - stop the regular add-on before starting it.
+> **DEV build** of the `hass-client-upstream` branch - stop the regular add-on before starting it.
 
 # Hue Emulation for Home Assistant
 

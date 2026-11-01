@@ -1,8 +1,8 @@
 # Emulated Hue (Direct ESPHome) - DEV
 
-Development build of the add-on, used to try the `base-image` branch of
-emulated-hue-core (hassio-addons base image, Python 3.14) before it replaces the
-regular add-on. It uses the same ports and the same `/config/hass-emulated-hue`
+Development build of the add-on, used to try a work-in-progress branch of
+emulated-hue-core (currently `hass-client-upstream`: the original `hass-client`
+instead of the dead fork) before it replaces the regular add-on. It uses the same ports and the same `/config/hass-emulated-hue`
 data as the regular add-on, so **stop the regular add-on before starting this
 one** and the other way round.
 
