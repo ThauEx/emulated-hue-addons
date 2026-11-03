@@ -1,6 +1,6 @@
 {
   "name": "Emulated HUE (Direct ESPHome) DEV",
-  "version": "hass-client-upstream-5407179",
+  "version": "hass-client-upstream-7dc5927",
   "description": "Development build of a work-in-progress branch - do not run next to the regular add-on",
   "url": "https://github.com/ThauEx/emulated-hue-core",
   "slug": "emulated_hue_direct_dev",
